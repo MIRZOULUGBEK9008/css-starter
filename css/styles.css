@@ -1,6 +1,7 @@
 /* CUSTOM-PROPS */
 :root {
   --black: #000;
+  --white: #fff;
 }
 
 /* FONT-FACE  */
@@ -14,6 +15,7 @@
   width: 100%;
   height: 100%;
   z-index: 999;
+  background-color: var(--white);
   transition: opacity 0.3s ease;
 }
 
@@ -23,9 +25,9 @@
 }
 
 .loader {
-  width: 48px;
-  height: 48px;
-  border: 5px dotted var(--black);
+  width: 4.8rem;
+  height: 4.8rem;
+  border: 0.5rem dotted var(--black);
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -45,6 +47,7 @@
 
 /* GLOBAL-STYLES  */
 html {
+  font-size: 62.5%;
   box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
@@ -60,10 +63,10 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
-  color: #222;
+  background-color: var(--white);
+  color: var(--black);
   font-family: "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.5;
   padding: 0;
   margin: 0;
@@ -77,16 +80,16 @@ img {
 
 /* FOCUS-STYLES  */
 *:focus {
-  outline: 3px dashed var(black);
-  outline-offset: 3px;
+  outline: 0.3rem dashed var(--black);
+  outline-offset: 0.3rem;
 }
 
 /* CONTAINER  */
 .container {
-  max-width: 1200px;
+  max-width: 120rem;
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -95,9 +98,9 @@ img {
 /* VISUALLY-HIDDEN  */
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  width: 0.1rem;
+  height: 0.1rem;
+  margin: -0.1rem;
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
